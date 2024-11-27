@@ -19,15 +19,15 @@ public class Homework05 {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("국어 : ");
-		String num1 = sc.nextLine();
+		double num1 = sc.nextDouble();
 		System.out.println(num1);
 		
 		System.out.print("영어 : ");
-		String num2 = sc.nextLine();
+		double num2 = sc.nextDouble();
 		System.out.println(num2);
 		
 		System.out.print("수학 : ");
-		String num3 = sc.nextLine();
+		double num3 = sc.nextDouble();
 		System.out.println(num3);
 		
 		
@@ -36,8 +36,8 @@ public class Homework05 {
 //		double b_num = 73.88;
 //		double c_num = 45.15;
 		
-//		System.out.println((int)(num1+num2+num3)); // (int)num1일경우 num1에만 적용되는거기 때문에 괄호로 적용하고 싶은걸 묶어야 적용이됨
-//		System.out.println((int)((num1+num2+num3)/3));
+		System.out.println(""+(int)(num1+num2+num3)); // (int)num1일경우 num1에만 적용되는거기 때문에 괄호로 적용하고 싶은걸 묶어야 적용이됨
+		System.out.println((int)((num1+num2+num3)/3));
 		
 		
 		
