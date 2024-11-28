@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Practice01 {
 
 	public static void main(String[] args) {
-		int checkNum;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("입력 : ");
-		checkNum = sc.nextInt();
-		
-		if(checkNum > 0) {
-			System.out.println("숫자 : "+checkNum);
-			System.out.println("양수입니다.");
-		}
+//		int checkNum;
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("입력 : ");
+//		checkNum = sc.nextInt();
+//		
+//		if(checkNum > 0) {
+//			System.out.println("숫자 : "+checkNum);
+//			System.out.println("양수입니다.");
+//		}
 		
 //		아래와 같이 변수 checkNum을 선언하세요.
 //		int checkNum;
@@ -25,7 +25,17 @@ public class Practice01 {
 //		숫자 : 123
 //		양수입니다.
 		
-
+		Scanner sc = new Scanner(System.in);
+		int checkNum;
+		System.out.println("입력 : ");
+		checkNum = sc.nextInt();
+		
+		if(checkNum > 0) {
+			System.out.println("숫자 : "+checkNum);
+			System.out.println("양수입니다.");
+		}
+		
+		
 		} 
 		
 		

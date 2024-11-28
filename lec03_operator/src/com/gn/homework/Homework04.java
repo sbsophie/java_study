@@ -1,5 +1,7 @@
 package com.gn.homework;
 
+import java.util.Scanner;
+
 public class Homework04 {
 
 	public static void main(String[] args) {
@@ -15,6 +17,27 @@ public class Homework04 {
 //		합계: 193점
 //		평균: 64점
 //		휴대폰을 바꿀 수 없습니다.
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int su1 = sc.nextInt();
+		System.out.println("국어 : "+su1);
+		
+		int su2 = sc.nextInt();
+		System.out.println("수학 : "+su2);
+		
+		int su3 = sc.nextInt();
+		System.out.println("영어 : "+su3);
+		
+		System.out.println("합계 : "+(su1+su2+su3));
+		System.out.println("평균 : "+(su1+su2+su3)/3);
+		
+		int su4 = ((su1+su2+su3)/3);
+		if(su4 < 90) {
+			System.out.println("휴대폰을 바꿀 수 없습니다.");
+		} else {
+			System.out.println("휴대폰을 바꿀 수 있습니다.");
+		}
 		
 		
 		

@@ -1,5 +1,7 @@
 package com.gn.homework;
 
+import java.util.Scanner;
+
 public class Homework02 {
 
 	public static void main(String[] args) {
@@ -9,6 +11,17 @@ public class Homework02 {
 //		
 //		구슬의 개수 : 3
 //		구슬의 개수는 홀수입니다.
+		
+		Scanner sc = new Scanner(System.in);
+		int su = sc.nextInt();
+		System.out.println("구슬의 개수 : "+su);
+		
+		int num = su;
+		if(num % 2 == 0) {
+			System.out.println("구슬의 개수는 짝수입니다.");
+		} else {
+			System.out.println("구슬의 개수는 홀수입니다.");
+		}
 		
 		
 	}
