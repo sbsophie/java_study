@@ -36,8 +36,8 @@ public class Homework05 {
 //		double b_num = 73.88;
 //		double c_num = 45.15;
 		
-		System.out.println(""+(int)(num1+num2+num3)); // (int)num1일경우 num1에만 적용되는거기 때문에 괄호로 적용하고 싶은걸 묶어야 적용이됨
-		System.out.println((int)((num1+num2+num3)/3));
+		System.out.println("총점 : "+(int)(num1+num2+num3)); // (int)num1일경우 num1에만 적용되는거기 때문에 괄호로 적용하고 싶은걸 묶어야 적용이됨
+		System.out.println("평균 : "+(int)((num1+num2+num3)/3));
 		
 		
 		
