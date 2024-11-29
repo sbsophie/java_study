@@ -21,7 +21,8 @@ public class Homework01 {
 
 		if(talk.equals("간다"));{
 			System.out.println("온다");
-//		} else {
+		}
+//			else {
 //			System.out.println("간다");
 //		}
 		
