@@ -22,7 +22,7 @@ public class Run {
 			case 2 : practice.practice02();break;
 			case 3 : practice.practice03();break;
 			case 6 : practice.practice06();break;
-			case 7 : practice.practice07();break;
+//			case 7 : practice.practice07();break;
 		}
 		
 		

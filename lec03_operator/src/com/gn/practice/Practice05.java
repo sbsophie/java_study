@@ -14,7 +14,7 @@ public class Practice05 {
 		boolean bool = sc.nextBoolean();
 		System.out.println(!bool);
 		
-		
+
 	
 	}
 

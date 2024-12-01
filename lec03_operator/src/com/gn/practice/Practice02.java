@@ -15,17 +15,48 @@ public class Practice02 {
 //		result ( 빈칸 )
 //		System.out.println(result); //2
 		
-		int result = 100;
-		result += 3;
-		System.out.println(result); //103
-		result -= 10;
-		System.out.println(result); //93
-		result *= 2;
-		System.out.println(result); //186
-		result /= 3;
-		System.out.println(result); //62
-		result %= 3;
-		System.out.println(result); //2
+		
+		int su = 100;
+		su += 3;
+		System.out.println(su);
+		su -= 10;
+		System.out.println(su);
+		su *= 2;
+		System.out.println(su);
+		su /= 3;
+		System.out.println(su);
+		su %= 3;
+		System.out.println(su);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		int result = 100;
+//		result += 3;
+//		System.out.println(result); //103
+//		result -= 10;
+//		System.out.println(result); //93
+//		result *= 2;
+//		System.out.println(result); //186
+//		result /= 3;
+//		System.out.println(result); //62
+//		result %= 3;
+//		System.out.println(result); //2
 		
 		// 홀수,짝수
 		// 1,3,5.... -> 2로 나눴을때 나머지 1

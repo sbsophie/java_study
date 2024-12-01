@@ -8,6 +8,16 @@ public class Practice01 {
 		System.out.println(a * (b + a));
 		System.out.println((a * (b + a)) / a);
 		
+		
+		int c = 5;
+		int d = 500;
+		System.out.println(c+d);
+		System.out.println(c*(c+d));
+		System.out.println(c*(c+d)/c);
+		
+		
+		
+		
 	}
 
 }

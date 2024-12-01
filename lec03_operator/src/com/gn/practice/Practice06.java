@@ -12,16 +12,26 @@ public class Practice06 {
 //		두번째 : **57**
 //		두 수 중에서 작은 수는? 4
 		
-		System.out.print("첫번째 : ");
+		System.out.println("첫번째 : ");
 		int num1 = sc.nextInt();
-		System.out.print("두번째 : ");
+		System.out.println("두번째 : ");
 		int num2 = sc.nextInt();
 		
-		int result = num2 < num1 ? num2 : num1;
-		// 57 < 4 ? 57 : 4
-		//          예 : 아니요
+		int result = num1 < num2 ? num1 : num2;
+		System.out.println(result);
 		
-		System.out.println("두 수 중에서 작은 수는?"+result);		
+	
+		
+//		System.out.print("첫번째 : ");
+//		int num1 = sc.nextInt();
+//		System.out.print("두번째 : ");
+//		int num2 = sc.nextInt();
+//		
+//		int result = num2 < num1 ? num2 : num1;
+//		// 57 < 4 ? 57 : 4
+//		//          예 : 아니요
+//		
+//		System.out.println("두 수 중에서 작은 수는?"+result);		
 //		System.out.println("두 수 중에서 작은 수는?"+(num < num2));
 		
 		

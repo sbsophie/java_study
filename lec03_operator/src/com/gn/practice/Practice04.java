@@ -16,15 +16,28 @@ public class Practice04 {
 		// (2) 20대 인가요? false
 		// (3) 영어 이름이 일치하면서 동시에 20대인가요? false
 		
-//		System.out.print("영어 이름 : ");
-		String name = sc.nextLine();
-		boolean bool = "Chulsu".equals(name);
+		System.out.println("영어 이름 : ");
+		String name1 = sc.next();
+		boolean bool = "Chulsu".equals(name1);
 		System.out.println(bool);
 		
-//		System.out.print("나이 : ");
-		int age = sc.nextInt();
-		boolean bool2 = 20 <= age && age <= 29;
+		System.out.println("20대 이신가요? : ");
+		int num = sc.nextInt();
+		boolean bool2 = num >= 20 && num <= 29;
 		System.out.println(bool2);
+		
+		
+		
+		
+////		System.out.print("영어 이름 : ");
+//		String name = sc.nextLine();
+//		boolean bool = "Chulsu".equals(name);
+//		System.out.println(bool);
+//		
+////		System.out.print("나이 : ");
+//		int age = sc.nextInt();
+//		boolean bool2 = 20 <= age && age <= 29;
+//		System.out.println(bool2);
 
 		
 		
