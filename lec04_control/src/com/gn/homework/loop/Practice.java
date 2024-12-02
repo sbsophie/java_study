@@ -24,29 +24,29 @@ public class Practice {
 	
 	public void practice03() {
 		Scanner sc = new Scanner(System.in);
-		String str = sc.next();
-//		boolean bool = "탈출".equals(str);
-		
-		for(int i = 1; ; i++) {
-			System.out.println("입력 : ");
-			
-			
-		}
-
-//		
-//		String name = sc.nextLine();
-//		boolean bool = "Chulsu".equals(name);
+		String str = sc.nextLine();
+		boolean bool = "탈출".equals(str);
 //		System.out.println(bool);
 		
-		
+		for(int i = 1; ; i++) {
+			if(bool) {
+				System.out.println("입력 : "+str);
+			} else if(!bool) {
+				System.out.println("프로그램 종료");
+			}
+			
+		}
+	}	
 	
-//	public void practice06() {
-//		int i = 1;
-//		for(int i = 1; i <= 5; i++) {
-//			for(int j = 1; j <= 9; j++) {
-//				System.out.print("*");
-//			}
-//		}
+	
+	public void practice06() {
+		String str = ' ';
+		for(int a = 1; a <= 5; a++) {
+			for(int j = 1; j <= 9; j++) {
+				if(a == ' ')
+				System.out.print("*");
+			}
+		}
 		
 		
 		
@@ -59,7 +59,7 @@ public class Practice {
 //			System.out.print("\n");
 //		}
 		
-	}	
+		
 		
 		
 		
