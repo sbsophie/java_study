@@ -78,6 +78,40 @@ public class LoopStmt {
 			}
 		}
 		
+// 8. do~while문
+		int count1 = 10;
+		while(count1 > 0 && count1 < 10) {
+			System.out.println("while문 출력");
+			count1--;
+		}
+		
+		int count2 = 10;
+		do {
+			System.out.println("do~while문 출력");
+			count2--;
+		}while(count2 > 0 && count2 < 10);
+		
+// 9. continue
+		for(int i = 1; i <= 10; i++) {
+			if(i % 2 == 0) {
+				continue;
+			}
+			System.out.println(i);
+		}
+		// 출력 : 1,3,5,7,9 가 나옴
+		
+		String str = "김철수";
+		for(int i = 0 ; i < str.length(); i ++) {
+			System.out.println(str.charAt(i));
+		}
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 	}
