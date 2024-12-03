@@ -1,5 +1,7 @@
 package com.gn.homework;
 
+import java.util.Scanner;
+
 public class Homework03 {
 
 	public static void main(String[] args) {
@@ -15,8 +17,20 @@ public class Homework03 {
 //		1인당 사탕 개수 : 3개
 //		남는 사탕 개수 : 13개
 		
+		Scanner sc = new Scanner(System.in);
 		
-
+		System.out.println("친구 수 : ");
+		int isFriend = sc.nextInt();
+		System.out.println("사탕의 수 : ");
+		int candy = sc.nextInt();
+		
+		if(candy % isFriend == 3) {
+				System.out.println("1인당 사탕 개수 : "+candy);
+			} else {
+				System.out.println("남는 사탕 개수 :");
+			}
+		
+		
 	}
 
 }

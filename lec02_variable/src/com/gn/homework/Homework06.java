@@ -1,5 +1,7 @@
 package com.gn.homework;
 
+import java.util.Scanner;
+
 public class Homework06 {
 
 	public static void main(String[] args) {
@@ -12,6 +14,17 @@ public class Homework06 {
 //		
 //		한 자리 숫자를 입력하세요: 3
 //		입력한 숫자의 제곱은 9입니다.
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("한 자리 숫자를 입력하세요 : ");
+		String name = sc.nextLine();
+		char one = name.charAt(0);
+		System.out.println(one*one);
+		
+		
+		
+		
 		
 		
 		

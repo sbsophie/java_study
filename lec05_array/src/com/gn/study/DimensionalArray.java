@@ -170,6 +170,48 @@ public class DimensionalArray {
 		}
 		
 		
+		System.out.println();  // 띄어쓰기 해주고 구분해주는 방법 ("\n=====")
+// 13. 배열의 복사
+		// (1) 얕은 복사
+		int[] arr1 = {5,6,7,8};
+//		int[] arr2 = arr1;
+//		arr2[3] = 1000;  // 이게 얕은복사 ->arr2만 바꿔도 arr1도 바뀌는 거임
+		
+		// (2) 깊은 복사
+		int[] arr2 = new int[arr1.length];
+		for(int i = 0; i < arr2.length; i++) {
+			arr2[i] = arr1[i];
+		}
+		arr2[3] = 1000;
+		
+		for(int num1 : arr1) {
+			System.out.print(num1+", ");
+		}
+		System.out.println();
+		for(int num2 : arr2) {
+			System.out.print(num2+", ");
+		}
+		
+// Math.random() -> 0.0 ~ 0.99999
+		double basic = Math.random();
+		System.out.println(basic);
+		
+		// 1.(최대값-최소값+1) 만큼 곱하기     1~100 사이의 정수 랜덤값을 도출하고 싶을때
+		double hundred = basic*(100-1+1);
+		System.out.println(hundred);
+		
+		// 2. 형변환
+		int casting = (int)hundred;
+		System.out.println(casting);
+		
+		// 3. 최소값 더하기
+		int add = casting +1;  //여기서 +1은 최소값임
+		System.out.println(add);
+		
+		//한번에 하는 방법 : 10~20 사이의 정수 랜덤값
+		int rnd = (int)(Math.random()*11)+10;
+		System.out.println(rnd);
+		
 		
 		
 		

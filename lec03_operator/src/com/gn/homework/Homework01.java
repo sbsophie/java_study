@@ -15,14 +15,26 @@ public class Homework01 {
 //		
 //		말해보세요 : 간다
 //		앵무새 : 온다
-
-		String talk = sc.next();
-		System.out.println("말해보세요 : ");
-
-		if(talk.equals("간다"));{
+		
+		String name = sc.next();
+		String set = "간다";
+		
+		if (name.equals(set)) {
 			System.out.println("온다");
+		} else {
+			System.out.println("간다");
 		}
-//			else {
+		
+		
+
+		
+		
+//		String talk = sc.next();
+//		System.out.println("말해보세요 : ");
+//
+//		if(talk.equals("간다"));{
+//			System.out.println("온다");
+//		} else {
 //			System.out.println("간다");
 //		}
 		

@@ -13,11 +13,12 @@ public class Homework02 {
 //		구슬의 개수는 홀수입니다.
 		
 		Scanner sc = new Scanner(System.in);
+		
 		int su = sc.nextInt();
 		System.out.println("구슬의 개수 : "+su);
 		
 		int num = su;
-		if(num % 2 == 0) {
+		if(num % 2 == 0) {   // %는 왼쪽의 피연산자를 오른쪽의 피연산자로 나눈 후 그 나머지를 반환함
 			System.out.println("구슬의 개수는 짝수입니다.");
 		} else {
 			System.out.println("구슬의 개수는 홀수입니다.");

@@ -26,11 +26,7 @@ public class Practice11 {
 		} 
 		
 		
-	
-		
-		
-		
-		
+
 		
 
 	}

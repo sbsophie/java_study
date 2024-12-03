@@ -17,6 +17,26 @@ public class Homework05 {
 //		총점 : 207
 //		평균 : 69
 		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		System.out.print("국어 : ");
+//		int su1 = sc.nextInt();
+//		System.out.println(su1);
+//		
+//		System.out.print("영어 : ");
+//		int su2 = sc.nextInt();
+//		System.out.println(su2);
+//		
+//		System.out.print("수학 : ");
+//		int su3 = sc.nextInt();
+//		System.out.println(su3);
+//		
+//		int su4 = su1+su2+su3;
+//		
+//		System.out.println("총점 : "+su4);
+//		System.out.println("평균 : "+(su4)/3);
+		
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("국어 : ");
 		double num1 = sc.nextDouble();

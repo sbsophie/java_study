@@ -9,6 +9,31 @@ public class Homework04 {
 //		문자를 입력하세요 : A
 //		A의 유니코드 : 65
 		
+		
+		System.out.println("문자를 입력하세요 : A");
+		
+		char num = 'A';
+		int su1 = num;
+		System.out.println(su1);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		System.out.println("문자를 입력하세요 : A");
 		
 		char test = 'A';
