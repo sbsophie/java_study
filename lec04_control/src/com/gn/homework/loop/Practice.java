@@ -55,29 +55,35 @@ public class Practice {
 	}
 	
 	
-	public void practice03() {
+	public void practice03() {  // [완료~!!!] -> for문 사용을 하지않음....
 		Scanner sc = new Scanner(System.in);
-		System.out.println("입력 : ");
-		String str = sc.next();
-		System.out.println(str);
-		
-		for(int i = 1; ; i++) {
+		String answer ="";
+			
+		do {
 			System.out.println("입력 : ");
-		}
+			answer = sc.nextLine();
+			System.out.println(answer);
+			if(answer.equals("탈출")) {
+				System.out.println("프로그램 종료");break;
+			}		
+		}while(true);
 		
-		if(str =="탈출") {
-			System.out.println("프로그램 종료");
-		}
-		
-		
-		
-		
-//		String name = sc.nextLine();
-//		boolean bool = "Chulsu".equals(name);
-//		System.out.println(bool);
-	
 	}
 		
+		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		String na = "";
+//		
+//		for(String na = na; ; na++) {
+//			System.out.println("입력 : ");
+//			na = sc.next();
+//			if(na.equals("탈출")) {
+//				System.out.println("프로그램 종료");
+//			}
+//		}
+		
+
 	public void practice04() {  // [완료~!!!]
 		Scanner sc = new Scanner(System.in);
 		String answer ="";
@@ -94,8 +100,10 @@ public class Practice {
 	
 	
 	public void practice05() {
+		 Scanner sc = new Scanner(System.in);
+		 int 
 		 
-		
+		 System.out.println();
 		
 		
 		
@@ -109,7 +117,8 @@ public class Practice {
 		
 	}
 	
-	public void practice06() {
+	
+	public void practice06() {  // [완료~!!!]
 		
 		for(int i = 1; i < 10; i+=2) {
 			for(int j = 9; j > i; j-=2) {
@@ -122,17 +131,38 @@ public class Practice {
 			}
 	}
 
-
+	
+	public void practice07() {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	public void practice08() {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 }

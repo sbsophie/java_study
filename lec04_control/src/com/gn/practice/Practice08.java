@@ -20,50 +20,44 @@ public class Practice08 {
 //		}
 		
 		
+
+		
+		
+		
 //		Scanner sc = new Scanner(System.in);
 //		
-//		System.out.println("정수(1~50) : ");
-//		int num = sc.nextInt();
-//		for(int i = 0; i < 3; i++) {
-//			if(num < 0) {
-//				System.out.println("1~50 사이의 정수를 입력하세요.");
-//			} else if(num > 50) {
-//				System.out.println("1~50 사이의 정수를 입력하세요.");
-//			} else if(num % 2 == 0) {
-//				System.out.println("합계 :"+num);
+//		String na = "";
+//		
+//		String na2;
+//		
+//		for(String na2 = na2; ; na2++) {
+//			System.out.println("입력 : ");
+//			na = sc.next();
+//			if(na.equals("탈출")) {
+//				System.out.println("프로그램 종료");
 //			}
-//				
 //		}
 		
 		
-		
-		
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println("숫자 : ");
-//		int num = sc.nextInt();
-//	
-//		if(num < 0) {
-//			System.out.println("양수만 입력해주세요.");
-//		} else if(num > 9) {
-//			System.out.println("9이하의 숫자를 입력해주세요.");
-//		} else if(num == 0){
-//			System.out.println("프로그램을 종료하세요");
-//		} else {
-//			
-//		}
-		
-		
-		
-		for(int i = 1; i < 10; i+=2) {
-			for(int j = 9; j > i; j-=2) {
-				System.out.print(" ");
-				} 
-			for(int j = 0; j < i; j++) {		
-				System.out.print("*");
-				}
-			System.out.println();
-			} 
+		Scanner sc = new Scanner(System.in);
+		String answer ="";
 			
+		do {
+			System.out.println("입력 : ");
+			answer = sc.nextLine();
+			System.out.println(answer);
+			if(answer.equals("탈출")) {
+				System.out.println("프로그램 종료");break;
+			}		
+		}while(true);
+		
+	}
+		
+		
+		
+		
+		
+		
 		
 		
 //		int test = 0;
@@ -88,4 +82,4 @@ public class Practice08 {
 
 	}
 
-}
+
