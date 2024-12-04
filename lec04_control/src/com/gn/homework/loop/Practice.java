@@ -55,7 +55,7 @@ public class Practice {
 	}
 	
 	
-	public void practice03() {  // [완료~!!!] -> for문 사용을 하지않음....
+	public void practice03() {  // [완료~!!!] 
 		Scanner sc = new Scanner(System.in);
 		String answer ="";
 			
@@ -72,14 +72,15 @@ public class Practice {
 		
 		
 //		Scanner sc = new Scanner(System.in);
-//		
+//	
 //		String na = "";
-//		
-//		for(String na = na; ; na++) {
+//	
+//		for(int i = 0; ; i++) {
 //			System.out.println("입력 : ");
 //			na = sc.next();
+//			System.out.println(na);
 //			if(na.equals("탈출")) {
-//				System.out.println("프로그램 종료");
+//				System.out.println("프로그램 종료");break;
 //			}
 //		}
 		
@@ -101,10 +102,15 @@ public class Practice {
 	
 	public void practice05() {
 		 Scanner sc = new Scanner(System.in);
-		 int 
 		 
-		 System.out.println();
+		 // 음수 입력 -> 해당 숫자 건너뛰고 다시 
+		 // 0 입력 -> 입력중단하고 모든 양수의 합계를 출력
 		
+		int num = 0;
+		for(int i = 0; ; i++) {
+			System.out.println("숫자(0을 입력하면 종료) :");
+			num = sc.nextInt();
+		}
 		
 		
 		
