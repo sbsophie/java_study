@@ -106,21 +106,19 @@ public class Practice {
 		 // 음수 입력 -> 해당 숫자 건너뛰고 다시 
 		 // 0 입력 -> 입력중단하고 모든 양수의 합계를 출력
 		
-		int num = 0;
-		for(int i = 0; ; i++) {
-			System.out.println("숫자(0을 입력하면 종료) :");
-			num = sc.nextInt();
+		int sum = 0;
+		while(true) {
+			System.out.println("숫자(0을 입력하면 종료) : ");
+			int num = sc.nextInt();
+			if(num == 0) {
+				break;
+			}
+			if(num > 0) {
+				sum += num;
+			}
+			System.out.println("양수의 합계 : "+sum);
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+			
 	}
 	
 	
@@ -141,12 +139,23 @@ public class Practice {
 	public void practice07() {
 		Scanner sc = new Scanner(System.in);
 		
-		
-		
-		
-		
-		
-		
+		int sum = 0;
+		while(true) {
+			System.out.println("정수 : ");
+			sum = sc.nextInt();
+			if(sum <= 0) {
+				System.out.println("양수가 아닙니다.");
+			} else {
+				for(int i = 1; i <= sum; i++) {
+					if(i % 2 == 1) {
+						System.out.print("박");
+					} else {
+						System.out.print("수");
+					}
+				}
+				break;
+			}
+		}
 		
 		
 		
