@@ -31,6 +31,7 @@ public class Practice06 {
 		
 		
 		
+		
 
 	}
 

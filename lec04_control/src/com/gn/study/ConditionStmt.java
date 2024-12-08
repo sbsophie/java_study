@@ -53,17 +53,13 @@ public class ConditionStmt {
 		// 오늘은 0요일 입니다.
 		String text = "";
 		switch(day) {
-			case 0 : 
-				text += "일";
+			case 0 : text += "일";
 				break;
-			case 1 :
-				text = "월";
+			case 1 : text = "월";
 				break;
-			case 2 :
-				text ="화";
+			case 2 : text ="화";
 				break;
-			default : 
-				text = "모르는";
+			default : text = "모르는";
 				break;
 		}
 		System.out.println(text+"요일 입니다.");
