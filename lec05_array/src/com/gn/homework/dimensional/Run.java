@@ -1,9 +1,13 @@
 package com.gn.homework.dimensional;
 
+import java.util.Scanner;
+
 public class Run {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		Practice practice = new Practice();
 
 	}
 
