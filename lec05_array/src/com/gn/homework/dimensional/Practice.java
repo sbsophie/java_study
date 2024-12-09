@@ -1,5 +1,7 @@
 package com.gn.homework.dimensional;
 
+import java.util.Scanner;
+
 public class Practice {  //[완료~!!]
 	public void practice01() {
 		int tall1 = 152;
@@ -31,11 +33,24 @@ public class Practice {  //[완료~!!]
 			System.out.println(t);
 		}
 
-
 	}
 
 	
 	public void practice02() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("정수 : ");
+		int number = sc.nextInt();
+		
+		int[] arr = new int[number];
+		
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = i+number;
+			System.out.println(arr[i]);
+		}
+		
+		for(int sum :arr) {
+			System.out.println(sum);
+		}
 		
 		
 		
@@ -43,10 +58,40 @@ public class Practice {  //[완료~!!]
 	}
 	
 	
+	public void practice03() {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	
 	
-	
-	
+	public void practice04() {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	
 	
 	
