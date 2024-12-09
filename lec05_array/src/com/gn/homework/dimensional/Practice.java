@@ -59,6 +59,9 @@ public class Practice {  //[완료~!!]
 	
 	
 	public void practice03() {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
 		
 		
 		
