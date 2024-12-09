@@ -1,6 +1,6 @@
 package com.gn.homework.dimensional;
 
-public class Practice {
+public class Practice {  //[완료~!!]
 	public void practice01() {
 		int tall1 = 152;
 		int tall2 = 180;
@@ -30,9 +30,40 @@ public class Practice {
 		for(int t : tall) {
 			System.out.println(t);
 		}
+
+
+	}
+
+	
+	public void practice02() {
+		
 		
 		
 		
 	}
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

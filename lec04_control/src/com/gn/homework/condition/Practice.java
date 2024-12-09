@@ -87,10 +87,10 @@ public class Practice {
 		String text ="";
 		switch(code) {
 			case 1 : text = "잘못된 요청입니다.";break;
-			case 2 : System.out.println("요청하신 서비스를 찾을 수 없습니다.");break;
-			case 3 : System.out.println("처리 방법을 알 수 없는 문제가 발생했습니다.");break;
-			case 4 : System.out.println("일시적인 서버 오류가 발생하였습니다.");break;
-			default : System.out.println("알 수 없는 오류가 발생하였습니다.");		
+			case 2 : text = "요청하신 서비스를 찾을 수 없습니다.";break;
+			case 3 : text = "처리 방법을 알 수 없는 문제가 발생했습니다.";break;
+			case 4 : text = "일시적인 서버 오류가 발생하였습니다.";break;
+			default : text = "알 수 없는 오류가 발생하였습니다.";break;		
 		}
 		
 		
