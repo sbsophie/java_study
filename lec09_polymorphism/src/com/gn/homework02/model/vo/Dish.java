@@ -1,21 +1,31 @@
 package com.gn.homework02.model.vo;
 
-public class Dish implements Menu{
+public class Dish extends Menu{
 	private String ingredients;
 	
 	public Dish() {}
 	
 	public Dish(String name,int price,String ingredients) {
-		this(name,price);
+		super(name,price);
 		this.ingredients = ingredients;
 	}
 	
-	public String getName() {
-		return NAME;
+	public String getIngredients() {
+		return ingredients;
 	}
-	public int getPrice() {
-		this.price = price;
+	public void setIngredients(String ingredients) {
+		this.ingredients = ingredients;
 	}
+	
+	
+	@Override
+	public void cook() {
+		System.out.println(super.toString()+"재료는"+ingredients+"입니다.");
+	}
+	
+	
+	
+	
 	
 	
 }

@@ -208,7 +208,7 @@ public class DimensionalArray {
 		int add = casting +1;  //여기서 +1은 최소값임
 		System.out.println(add);
 		
-		//한번에 하는 방법 : 10~20 사이의 정수 랜덤값
+		//한번에 하는 방법 : 10~20 사이의 정수 랜덤값 (int)(최대값-최소값+1)+(최소값)
 		int rnd = (int)(Math.random()*11)+10;
 		System.out.println(rnd);
 		

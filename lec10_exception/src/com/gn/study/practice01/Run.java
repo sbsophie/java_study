@@ -2,6 +2,8 @@ package com.gn.study.practice01;
 
 import java.util.Scanner;
 
+import com.gn.study.controller.Calculator;
+
 public class Run {
 	public static void main(String[] args) {
 		Practice practice = new Practice();
