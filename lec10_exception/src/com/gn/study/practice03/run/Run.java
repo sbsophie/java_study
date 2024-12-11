@@ -19,7 +19,9 @@ public class Run {
 			lm.login(name1, name2);
 		}catch(InvalidCredentialsException e) {
 			e.printStackTrace();
-		}		
+		}finally {
+			sc.close();
+		}
 		
 		
 		
