@@ -7,43 +7,57 @@ public class BookMenu {
 	private BookController bc = new BookController();
 	
 	public void mainMenu() {
-		int su = 0;
-		do {
-			System.out.println("메뉴 선택: ");
-			su = sc.nextInt();
-			if(su == 9) {
-				System.out.println("프로그램을 종료합니다");
-			}
-		}while(true);
+		while(true) {
+		System.out.println("=== 가남 도서관에 오신걸 환영합니다 ===\n원하시는 업무의 번호를 선택하세요");
+		System.out.println("1. 새 도서 추가");
+//		insertBook();
+		System.out.println("2. 도서 전체 조회");
+		System.out.println("3. 도서 검색 조회");
+		System.out.println("4. 도서 삭제");
+		System.out.println("5. 도서 오름차순 정렬");
+		System.out.println("9. 종료");
+		System.out.println("메뉴 선택: ");
+
+		int choice = sc.nextInt();
+		sc.nextLine();
 		
-//		if(bc.contains(1,2,3,4,5,9)) {
-//			System.out.println();
-//		} else {
-//			System.out.println("잘못 입력하였습니다");
-//		}
-		
+		switch(choice) {
+		case 1 : insertBook(); break;
+		case 2 : selectList(); break;
+		case 3 : searchBook(); break;
+		case 4 : deleteBook(); break;
+		case 5 : ascBook(); break;
+		case 9 : System.out.println("프로그램을 종료합니다");
+		return;
+		default : System.out.println("잘못 입력하였습니다.");
+		}
 	}
+		
+}
 	public void insertBook() {
 		String title = sc.nextLine();
 		String author = sc.nextLine();
 		int category = sc.nextInt();
 		int price = sc.nextInt();
 		
-		public Book(String title,String author,int category,int price) {
-			this.title = title;
-			this.author = author;
-			this.category = category;
-			this.price = price;
+		String c = "";
+		if(category == 1) {
+			c = "인문";
+		} else if(category == 2) {
+			c = "자연과학";
+		} else if(category == 3) {
+			c = "어린이";
+		} else {
+			c = "기타";
 		}
-		Book bk = new Book(title,author,category,price);
-	        // 5. 매개변수 생성자를 이용하여 Book 객체 생성
-	        // 장르명 입력은 숫자로 받지만 객체 생성할때는 문자열로 넘기기
-	        // (1:인문 / 2:자연과학 / 3:어린이 / 그 외:기타)
-	        // 6. BookController의 insert로 Book 객체 전달
 		
+		Book sum = new Book(title,author,c,price);
+	    // 6. BookController의 insert로 Book 객체 전달
+		//getter/setter 사용해야하나??
 		
 		
 	}
+	
 	public void selectList() {
 		// 1. BookController의 selectList 메소드 호출
 		bc.selectList();
