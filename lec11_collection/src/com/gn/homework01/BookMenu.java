@@ -1,5 +1,6 @@
 package com.gn.homework01;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BookMenu {
@@ -59,12 +60,16 @@ public class BookMenu {
 	}
 	
 	public void selectList() {
-		// 1. BookController의 selectList 메소드 호출
 		bc.selectList();
         // -> 결과값을 임의의 리스트 bookList생성하여 대입
-        // 2. 조건식 이용
-        // 2-1. bookList가 비어있는 경우
-        // -> "존재하는 도서가 없습니다."라는 문구 출력
+		selectList b1 = new BookList();
+		ArrayList selectList = bc.serchBook(Keyword);
+		if(bookList.isEmpty()) {
+			System.out.println("검색되는 도서가 없습니다.");
+		} else {
+			for(int i = 0;)
+		}
+       
         // 2-2. bookList가 비어있지 않은 경우
         // -> 반복문을 통해 bookList안의 Book 객체들 출력
 		

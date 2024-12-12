@@ -1,11 +1,13 @@
 package com.gn.homework01;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class BookController {
 	private List<Book> bookList = new ArrayList<Book>();
 	private Book bk;
+	
 	
 	public BookController() {
 		bookList.add(new Book("느리게 나이드는 습관","정희원","인문",16200));
@@ -14,15 +16,21 @@ public class BookController {
 		bookList.add(new Book("혼자 공부하는 자바","신용권","기타",25240));
 	}
 	public void insertBook(Book bk) {
-		this.bk = bk;
-		 // 전달 받은 bk를 bookList에 추가
+		bookList.add(bk);
+		 
 	}
 	public List<Book> selectList(){
-		 // bookList 반환
+		return bookList;
+		
 	}
-	public List<Book> searchBook(String Keyword){
+	public List<Book> searchBook(String keyword){
 		this.keyword = keyword;
-		 // 1. 검색 결과 리스트를 담아줄 리스트(ArrayList searchList) 선언 및 생성
+		ArrayList<String> searchList = new ArrayList<String>();
+		
+		searchList.contains("");
+		searchList.add("");
+		return searchList;   //System.out.println(searchList); ???
+		
         // 2. 반복문을 통해 list의 책 이름 중에 전달받은 keyword 포함된 경우
         // -> String에 특정 문자열이 포함되었는지 확인할 때
         // String데이터.contains("특정 문자열")
@@ -39,6 +47,7 @@ public class BookController {
 	}
 	
 	public int ascBook() {
+		Collections.sort((List<Book>) bookList);
 		 // Collections.sort와 Comparable활용
 	    // 책 이름 기준으로 오름차순 정렬 후 1 반환
 		
