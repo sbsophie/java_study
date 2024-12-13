@@ -1,10 +1,10 @@
 package com.gn.homework01;
 
-public class Book {
-	public String title;
-	public String author;
-	public String category;
-	public int price;
+public class Book implements Comparable <Book>{
+	private String title;
+	private String author;
+	private String category;
+	private int price;
 	
 	public Book() {}
 	
@@ -44,6 +44,14 @@ public class Book {
 	public String toString() {
 		return "제목(저자명),장르,가격";
 	}
+
+	@Override
+	public int compareTo(Book other) {
+		return (this.title.compareTo(other.title));
+	
+	}
+
+	
 	
 	
 	

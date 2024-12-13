@@ -1,6 +1,7 @@
 package com.gn.homework01;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class BookMenu {
@@ -60,57 +61,84 @@ public class BookMenu {
 	}
 	
 	public void selectList() {
-		bc.selectList();
+        // 1. BookController의 selectList 메소드 호출
+		//bc.selectList();
         // -> 결과값을 임의의 리스트 bookList생성하여 대입
-		selectList b1 = new BookList();
-		ArrayList selectList = bc.serchBook(Keyword);
+		List<Book> bookList = bc.selectList();
+        // 2. 조건식 이용        
+		// 2-1. bookList가 비어있는 경우
+        // -> "존재하는 도서가 없습니다."라는 문구 출력
 		if(bookList.isEmpty()) {
-			System.out.println("검색되는 도서가 없습니다.");
-		} else {
-			for(int i = 0;)
-		}
-       
-        // 2-2. bookList가 비어있지 않은 경우
+			System.out.println("존재하는 도서가 없습니다.");
+		}else {
+		// 2-2. bookList가 비어있지 않은 경우
         // -> 반복문을 통해 bookList안의 Book 객체들 출력
+			for(Book b :bookList) {
+				System.out.println(b);
+			}
+		}
+
+
 		
 	}
 	public void searchBook() {
 		// 1. 검색할 도서명 키워드 입력 받기(String keyword)
+		String keyword = sc.nextLine();
         // 2. BookControllr의 searchBook 메소드로 위의 keyword 전달
+//		bc.searchBook(keyword);
         // -> 결과 값을 임의의 리스트 searchList를 생성후 대입
-        // -> 키워드가 완전한 도서명이 아니라 도서명의 일부 일 수 있고
-        // 일부 키워드를 입력한 경우 해당 키워드를 포함하는 여러 개의 도서 조회됨
-        // 단일 객체가 아니라 리스트로 조회
+		// -> 키워드가 완전한 도서명이 아니라 도서명의 일부 일 수 있고
+		// 일부 키워드를 입력한 경우 해당 키워드를 포함하는 여러 개의 도서 조회됨
+		// 단일 객체가 아니라 리스트로 조회
+		List<Book> searchList = bc.searchBook(keyword);
         // 3. 조건식 이용
-        // 3-1. searchList가 비어 있는 경우
-        // -> "검색 결과가 없습니다."라는 문구 출력
-        // 3-2. searchList가 비어 있지 않은 경우
-        // -> 반복문으로 searchList 안의 Book 객체 출력
-		
-		
-		
+		// 3-1. searchList가 비어 있는 경우
+		if(searchList.isEmpty()) {
+			// -> "검색 결과가 없습니다."라는 문구 출력
+			System.out.println("검색 결과가 없습니다.");
+		}else {
+			// 3-2. searchList가 비어 있지 않은 경우
+			// -> 반복문으로 searchList 안의 Book 객체 출력
+			for(Book b:searchList) {
+				System.out.println(b);
+			}
+		}
+	
 	}
 	public void deleteBook() {
 		 // 1. 삭제할 도서명 입력 받기 (String title)
+		String title = sc.nextLine();
         // 2. 삭제할 저자명 입력 받기 (String author)
-        // -> 같은 도서명을 가졌지만 저자명이 다른 경우
-        // 다른 도서명을 가졌지만 저자명이 같은 경우도 있을 수 있음
+		// -> 같은 도서명을 가졌지만 저자명이 다른 경우
+		// 다른 도서명을 가졌지만 저자명이 같은 경우도 있을 수 있음
+		String author = sc.nextLine();
         // 3. BookController의 deleteBook() 메소드로 title, author 전달
-        // -> 결과값을 임의의 Book(참조변수명 remove) 객체에 대입
+		// -> 결과값을 임의의 Book(참조변수명 remove) 객체에 대입
+//		bc.deleteBook(title, author);
+		Book remove = bc.deleteBook(title, author);
         // 4. 조건식 이용
-        // 4-1. remove가 존재하는 경우
-        // -> "성공적으로 삭제되었습니다." 문구 출력
-        // 4-2. remove가 존재하지 않는 경우
-        // -> "삭제할 도서를 찾지 못했습니다."라는 문구 출력
-		
-		
-		
+		// 4-2. remove가 존재하지 않는 경우
+		if(remove == null) {
+			// -> "삭제할 도서를 찾지 못했습니다."라는 문구 출력
+			System.out.println("삭제할 도서를 찾지 못했습니다.");
+		}else {
+			// 4-1. remove가 존재하는 경우
+			// -> "성공적으로 삭제되었습니다." 문구 출력
+			System.out.println("성공적으로 삭제되었습니다.");
+		}
 	}
 	public void ascBook() {
 		// 1. BookController의 ascBook() 메소드 호출
+//		bc.ascBook();  // 밖에 있는 메소드를 호출하는 방법
         // 2. 메소드 호출 결과가 1이면 성공, 그 외 실패
-        // 3. 성공시 "정렬에 성공하였습니다." 출력 후 전체 목록 조회
-        // 4. 실패시 "정렬에 실패하였습니다." 출력
+		if(bc.ascBook() == 1) {
+			// 3. 성공시 "정렬에 성공하였습니다." 출력 후 전체 목록 조회
+			System.out.println("정렬에 성공하였습니다.");
+			selectList();  //본인안에 있는 메소드 호출방법 (목록조회)
+		} else {
+			// 4. 실패시 "정렬에 실패하였습니다." 출력
+			System.out.println("정렬에 실패하였습니다.");
+		}
 		
 		
 		
