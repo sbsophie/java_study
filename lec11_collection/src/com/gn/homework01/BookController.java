@@ -46,7 +46,6 @@ public class BookController {
         // 2. 반복문을 통해 bookList의 책 중 책명이 전달 받은 title과 동일하고
         // 저자 명이 전달 받은 author와 동일한 경우 해당 인덱스 도서 삭제 후 빠져나감
 		for(int i = 0; i < bookList.size(); i++) {
-			System.out.println(bookList.get(i));
 			Book b = bookList.get(i);
 			if(b.getTitle().equals(title)&&b.getAuthor().equals(author)) {
 				bookList.remove(i);
@@ -65,6 +64,16 @@ public class BookController {
 		return 1;
 		
 	}
+	
+//	 public int ascBook(){
+//	    	try{
+//	    		Collections.sort(bookList);
+//	    		return 1;
+//	    	}catch(Exception e) {
+//	    		return -1; 
+//	    	}
+//	    }
+	
 	
 	
 }

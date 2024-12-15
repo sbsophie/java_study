@@ -9,10 +9,10 @@ public class BookMenu {
 	private BookController bc = new BookController();
 	
 	public void mainMenu() {
-		while(true) {
+		int num = 0;
+		while(num != 9) {
 		System.out.println("=== 가남 도서관에 오신걸 환영합니다 ===\n원하시는 업무의 번호를 선택하세요");
 		System.out.println("1. 새 도서 추가");
-//		insertBook();
 		System.out.println("2. 도서 전체 조회");
 		System.out.println("3. 도서 검색 조회");
 		System.out.println("4. 도서 삭제");
@@ -20,26 +20,31 @@ public class BookMenu {
 		System.out.println("9. 종료");
 		System.out.println("메뉴 선택: ");
 
-		int choice = sc.nextInt();
+		num = sc.nextInt();
 		sc.nextLine();
 		
-		switch(choice) {
+		switch(num) {
 		case 1 : insertBook(); break;
 		case 2 : selectList(); break;
 		case 3 : searchBook(); break;
 		case 4 : deleteBook(); break;
 		case 5 : ascBook(); break;
-		case 9 : System.out.println("프로그램을 종료합니다");
-		return;
-		default : System.out.println("잘못 입력하였습니다.");
+		case 9 : System.out.println("프로그램을 종료합니다"); break;
+		default : System.out.println("잘못 입력하였습니다. 다시 입력해주세요.");break;
 		}
 	}
 		
 }
 	public void insertBook() {
+		System.out.println("=== 도서 등록 ===");
+		System.out.println("도서명 : ");
 		String title = sc.nextLine();
+		System.out.println("저자명 : ");
 		String author = sc.nextLine();
+		System.out.println("장르 : ");
 		int category = sc.nextInt();
+		
+		System.out.println("가격 : ");
 		int price = sc.nextInt();
 		
 		String c = "";
@@ -54,13 +59,13 @@ public class BookMenu {
 		}
 		
 		Book sum = new Book(title,author,c,price);
-	    // 6. BookController의 insert로 Book 객체 전달
-		//getter/setter 사용해야하나??
-		
+		// 6. BookController의 insert로 Book 객체 전달		
+		bc.insertBook(sum);
 		
 	}
 	
 	public void selectList() {
+		System.out.println("=== 전체 조회 ===");
         // 1. BookController의 selectList 메소드 호출
 		//bc.selectList();
         // -> 결과값을 임의의 리스트 bookList생성하여 대입
@@ -82,6 +87,8 @@ public class BookMenu {
 		
 	}
 	public void searchBook() {
+		System.out.println("=== 도서 검색 ===");
+		System.out.println("검색어 : ");
 		// 1. 검색할 도서명 키워드 입력 받기(String keyword)
 		String keyword = sc.nextLine();
         // 2. BookControllr의 searchBook 메소드로 위의 keyword 전달
@@ -106,11 +113,14 @@ public class BookMenu {
 	
 	}
 	public void deleteBook() {
+		System.out.println("=== 도서 삭제 ===");
+		System.out.println("도서명 : ");
 		 // 1. 삭제할 도서명 입력 받기 (String title)
 		String title = sc.nextLine();
         // 2. 삭제할 저자명 입력 받기 (String author)
 		// -> 같은 도서명을 가졌지만 저자명이 다른 경우
 		// 다른 도서명을 가졌지만 저자명이 같은 경우도 있을 수 있음
+		System.out.println("저자명 : ");
 		String author = sc.nextLine();
         // 3. BookController의 deleteBook() 메소드로 title, author 전달
 		// -> 결과값을 임의의 Book(참조변수명 remove) 객체에 대입

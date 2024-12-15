@@ -42,12 +42,12 @@ public class Book implements Comparable <Book>{
 	
 	
 	public String toString() {
-		return "제목(저자명),장르,가격";
+		return title+"("+author+"), "+category+", "+price;
 	}
 
 	@Override
 	public int compareTo(Book other) {
-		return (this.title.compareTo(other.title));
+		return this.title.compareTo(other.title);
 	
 	}
 
