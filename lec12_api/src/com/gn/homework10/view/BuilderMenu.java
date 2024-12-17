@@ -39,13 +39,17 @@ public class BuilderMenu {
 	public void builderMenu() {
 		String str = "J a v a P r o g r a m ";
 		// BuilderController()의 afterReplace() 반환값 활용
-		bc.afterReplace(str);
+		bc.afterReplace("띄어쓰 제거전 : "+str);
 		// 다음의 3가지 출력
 		// 1. 띄어쓰기 제거 처리 후 글자
 		// 2. 띄어쓰기 제거 처리 후 글자 개수
 		// 3. 결과를 모두 대문자로 변환 한 것
-		System.out.println(str.trim());
-		
+		System.out.println("띄어쓰기 제거 후: ");
+		str.trim();
+		System.out.println("띄어쓰기 제거 후 글자 수 : ");
+		str.length();
+		System.out.println("대문자로 변 : ");
+		str = str.toUpperCase();
 		
 		
 		
