@@ -11,7 +11,7 @@ public class BuilderController {
 		return input;
 	}
 	public int findChar(String input, char one) {
-		return input;
+//		return input;
 		return one;
 	}
 	
