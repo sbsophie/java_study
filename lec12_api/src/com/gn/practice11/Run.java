@@ -38,6 +38,9 @@ public class Run {
 		String result = "";
 		switch(day) {
 		case 1 : result = "월요일";break;
+		case 2 : result = "화요일";break;
+		case 3 : result = "수요일";break;
+		case 4 : result = "목요일";break;
 		}
 		return result;
 	
