@@ -6,10 +6,7 @@ import java.util.Calendar;
 
 public class Run {
 	public static void main(String[] args) {
-		LocalTime startTime = LocalTime.now();
-		LocalTime endTime = LocalTime.of(0, 0);
-//		Calendar time = Calendar.getInstance();
-//		long diff = time.getTimeInMillis();
+		long startTime = System.nanoTime();
 		
 		Practice p = new Practice();
 		String song = "나비야, 나비야 이리 날아오너라"
@@ -19,6 +16,7 @@ public class Run {
 		p.method1(song);
 		p.method2(song);
 		
-		long timeBetween = ChronoUnit.NANOS.between(startTime,endTime);
+		long endTime = System.nanoTime();
+		System.out.println(endTime - startTime);
 	}
 }
