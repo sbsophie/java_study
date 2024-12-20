@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Practice {
 	public String method1(String song) {
 		File dir = new File("C:\\test\\sub");
-		if(dir.exists()) {
+		if(!dir.exists()) {
 			dir.mkdirs();
 		}
 		File file = new File(dir,"나비야1.dat");

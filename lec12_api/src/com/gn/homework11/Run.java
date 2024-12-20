@@ -1,6 +1,9 @@
 package com.gn.homework11;
 
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class Run {
@@ -23,36 +26,25 @@ public class Run {
 //		종료합니다.
 		Scanner sc = new Scanner(System.in);
 		
-		
 		LocalTime start = LocalTime.now();
-		System.out.println("기준 : "+start);
-		
-		long before = System.currentTimeMillis();
-
-		System.out.println("입력 : ");
-		String name = sc.next();
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH시 mm분 ss초"); 
+		System.out.println(dtf.format(start));
 		
 		
-		for(int i =0; i < name.length(); i++) {
-		if(name.equals("Y")) {
-			long after1 = System.currentTimeMillis();
-			System.out.println((after1-before));
-		}else if(name.equals("y")){
-			long after2 = System.currentTimeMillis();
-			System.out.println(after2-before);
-		}else if(name.equals("n")) {
-			System.out.println("종료합니다.");
-		}else {
-			System.out.println("다시 입력해주세요.");
+		while(true) {
+			System.out.println("입력 : ");
+			String str = sc.next();
+			if("Y".equals(str.toUpperCase())) {
+				long diff = ChronoUnit.SECONDS.between(start, LocalDateTime.now());
+				System.out.println("경과(초) : "+diff);
+			}else if("N".equals(str.toUpperCase())) {
+				System.out.println("종료합니다.");
+				break;
+			}else {
+				System.out.println("다시 입력해주세요.");
+			}
 		}
-
-		
-		}
-		
-		
-				
-		
-		
+		sc.close();
 		
 		
 	}

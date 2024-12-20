@@ -8,7 +8,7 @@ import java.time.temporal.ChronoUnit;
 public class Run {
 	public static void main(String[] args) {
 		// 1. 오늘 날짜 출력
-		LocalDateTime day = LocalDateTime.now();
+		LocalDate day = LocalDate.now();
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy년 MM월 dd일");
 		System.out.println("오늘 날짜 : "+day.format(dtf));
 		
@@ -22,6 +22,7 @@ public class Run {
 		// 3. 영화 개봉일의 요일 출력 -> getKoreanDayOfWeek 메소드 호출
 		//		dDay 요일구하기
 		int yoil = release.getDayOfWeek().getValue();
+		
 		DateTimeFormatter dtr1 = DateTimeFormatter.ofPattern("E요일");
 		System.out.println("영화 개봉일의 요일 : "+release.format(dtf));
 
