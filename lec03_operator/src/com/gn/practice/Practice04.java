@@ -28,33 +28,7 @@ public class Practice04 {
 		
 		
 		
-		
-////		System.out.print("영어 이름 : ");
-//		String name = sc.nextLine();
-//		boolean bool = "Chulsu".equals(name);
-//		System.out.println(bool);
-//		
-////		System.out.print("나이 : ");
-//		int age = sc.nextInt();
-//		boolean bool2 = 20 <= age && age <= 29;
-//		System.out.println(bool2);
 
-		
-		
-		
-
-		
-//		int a = 6;
-//		int b = 5;
-//		int c = 7;
-//		
-//		// (1) AND(&&) : 6은 5보다 크고, 그리고 6은 7보다 큰가요?
-//		boolean andBool = a > b && a > c;
-//		System.out.println(andBool);
-//		
-//		// (2) OR(||) : 6은 5보다 크고, 또는 6은 7보다 큰가요?
-//		boolean orBool = a > b || a > c;
-//		System.out.println(orBool);
 		
 		
 	}

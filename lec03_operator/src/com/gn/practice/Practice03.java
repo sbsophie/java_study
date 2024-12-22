@@ -23,7 +23,7 @@ public class Practice03 {
 
 		boolean big = num1 > num2;
 		System.out.println("첫번째 숫자가 두번째 숫자보다 큰가요?"+big);
-
+		
 
 		
 //		int age = sc.nextInt();
