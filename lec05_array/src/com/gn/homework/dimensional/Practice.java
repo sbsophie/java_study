@@ -54,7 +54,6 @@ public class Practice {  //[완료~!!]
 		
 		
 		
-		
 	}
 	
 	

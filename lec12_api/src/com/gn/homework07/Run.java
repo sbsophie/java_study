@@ -9,23 +9,27 @@ public class Run {
 //		그다음 사용자가 랜덤값을 맞추는 데까지 몇번이 걸렸는지 출력하세요.
 		
 		Scanner sc = new Scanner(System.in);
-		int idx = (int)(Math.random()*100)+1;
 		
-		int result = idx;
-//		int answer = sc.nextInt();
+		int rnd = (int)(Math.random()*100)+1;
+		int count = 0;
+
+		System.out.println("1~100 사이의 임의의 난수를 맞춰보세요");
 		
-		for(int i = 0; i < 100; i++) {
-			System.out.println("숫자를 입력하세요 : ");
+		while(true) {
+			System.out.println("숫자를 입력하세요: ");
 			int answer = sc.nextInt();
-				if(answer < result) {
-				System.out.println("UP!");
-				}else if(answer > result){
-					System.out.println("DOWN!");
-				}else {
-					System.out.println("정답입니다!!");
-				}
+			count++;
+			
+			if(answer < rnd) {
+				System.out.println("UP !");
+			} else if(answer > rnd) {
+				System.out.println("DOWN !");
+			} else {
+				System.out.println("정답입니다!!");
 			}
+		} 
 		
+		System.out.println();
 		
 			
 		
