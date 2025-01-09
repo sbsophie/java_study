@@ -2,16 +2,22 @@ package com.gn.test;
 
 public class Test {
 
-//	public static void main(String[] args) {
-//		        
-//	  public int[] solution(int money) {
-//	  int[] answer = {};
-//	  int max = money/5500;
-//	  int change = money-(5500*max);
-//	  answer = new int[] {max,change};
-//	  return answer;
-//		        
-//		        
-//		        
-//	}
+	public static void main(String[] args) {
+
+		class Solution {
+		    public String solution(String my_string) {
+		        String answer = "";
+		        String[] arr = my_string.split("");
+		        for(int i = arr.length - 1; i >= 0; i --) {
+		            answer += arr[i];
+		        }
+		        return answer;
+		    }
+		}
+
+		
+		
+		
+		
+	}
 }
