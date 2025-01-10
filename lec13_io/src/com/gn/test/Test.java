@@ -5,6 +5,14 @@ import java.util.Scanner;
 public class Test {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		int su = sc.nextInt();
+		
+		int[] a = new int[7];
+		
+		int sum =0;
+		for(int i = 0; i < a.length; i++) {
+			sum = a[i];
+		}
 		
 // continue 활용하는 방법		
 //		for(int i =1; i <10; i++) {
@@ -23,8 +31,6 @@ public class Test {
 //		}
 		
 //배열		
-				
-				
 
 //		String[] friends = {"박지영","김태우","이지훈","최유진","정승호"};
 //		
