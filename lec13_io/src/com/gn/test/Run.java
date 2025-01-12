@@ -142,13 +142,7 @@ public class Run {
 //		System.out.println("계산불가");
 //		
 //		
-//		
-		
-		
-		
-		
-		
-		
+//			
 //		if(totalLegs<2*totalAnimal || totalLegs<4*totalAnimal) {
 //			System.out.println("계산불가");
 //		}else {
@@ -157,51 +151,31 @@ public class Run {
 //			System.out.println(dog+" "+chick);
 //		}
 		
-		public class Main {
-			 public static void main(String args[]) {
-			    Scanner scan = new Scanner(System.in);
-			    int cost = scan.nextInt();
+//				Scanner scan = new Scanner(System.in);
+//			    int cost = scan.nextInt();
+//
+//			    int[] coins = {500,100,50,10,1};
+//			    double[] d = new double[coins.length];
+//
+//			    for(int i =0; i <coins.length; i++){
+//			        if(cost>=coins[i]){
+//			            d[i] = cost/coins[i];
+//			            cost -= d[i]*coins[i];
+//			        }else{
+//			            d[i] =0;
+//			        }
+//			        System.out.println(coins[i]+"원:"+(int)d[i]+"개");
+//			    }
 
-			    int[] coins = {500,100,50,10,1};
-			    double[] d = new double[coins.length];
 
-			    for(int i =0; i <coins.length; i++){
-			        if(cost>=coins[i]){
-			            d[i] = cost/coins[i];
-			            cost -= d[i]*coins[i];
-			        }else{
-			            d[i] =0;
-			        }
-			        System.out.println(coins[i]+"원:"+(int)d[i]+"개");
-			    }
-
-			 }
-			}	
-		
-		
-	
-		
-//		int[] arr = new int[5];
-//		for(int i=0; i < arr.length-1; i--) {
-//			arr[i] = i+10;
-//			System.out.println(arr[i]);
-//		}
-//		for(int sum : arr) {
-//			System.out.println(sum);
-//		}
-		
-
-		int[] num = {-62,107,-12,89,-35};
-		for(int a : num) {
-			if(a > 50) {
-				System.out.println(a);
-			}
-		}
-		
-		//홀수
-		//오름차순 1,3,5,7,9
-		
-		
+        int solution(int n) {
+            int answer = 0;
+            if(n % 7 != 0)
+                answer = n/7+1;
+            else
+                answer = n/7;
+            return answer;
+        
 		
 		
 		
