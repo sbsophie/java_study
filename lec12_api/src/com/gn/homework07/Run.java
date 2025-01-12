@@ -28,11 +28,7 @@ public class Run {
 				System.out.println("정답입니다!!");
 			}
 		} 
-		
-		System.out.println();
-		
-			
-		
+
 		
 		
 	}

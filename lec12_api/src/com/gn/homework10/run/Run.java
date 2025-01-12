@@ -6,15 +6,7 @@ import java.util.Collections;
 import com.gn.homework10.view.BuilderMenu;
 
 public class Run {
-	public static void main(String[] args) {
-//		BuilderMenu bm = new BuilderMenu();
-//		bm.mainMenu();
-		
-		
-		
-		
-//		Arrays.sort(arry);
-//		answer  = array[array.length/2];
+	public static int main(String[] args) {
 		
 		int[] array = {1,2,7,10,11};
 		for(int i = 0; i <array.length-1; i++) {
@@ -28,8 +20,6 @@ public class Run {
 		}
 		return array[array.length/2];
 		
-		
-		
-		
+
 	}
 }
